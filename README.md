@@ -82,7 +82,7 @@ montando um volume já existente
 ``` docker run --name nginx_volume -d -p 8888:80 --mount type=volume,source=meu_volume,target=/app nginx```
 
 entrando na maquina 
-``` docker exec -it nginx_volume bash```
+``` docker run exec -it nginx_volume bash```
 
 limpando os volumes 
 ``` docker volume prune```
@@ -95,7 +95,7 @@ baixando imagens
 criando uma imagem do nginx com o vim instalado
 
 crie o arquivo Dockerfile
-
+[Dockerfile](https://github.com/luan-prates/curso-docker-fullcycle/blob/fdc4528a3c96fd8fc23c3ee314e413378889bff9/docker_imagens/nginx/Dockerfile)
 
 fazendo o build
 ``` docker build -t luanpartes/nginx-com-vim:latest .```
