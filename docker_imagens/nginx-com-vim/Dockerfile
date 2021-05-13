@@ -9,3 +9,4 @@ RUN apt-get update && \
 
 #copiando os arquivos para dentro da imagem 
 COPY /html /usr/share/nginx/html
+
