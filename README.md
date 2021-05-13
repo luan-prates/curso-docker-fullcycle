@@ -92,3 +92,14 @@ limpando os volumes
 baixando imagens 
 ```docker pull ubuntu```
 
+criando uma imagem do nginx com o vim instalado
+
+crie o arquivo Dockerfile
+
+
+fazendo o build
+``` docker build -t luanpartes/nginx-com-vim:latest .```
+
+fazendo push da imagem no docker hub
+``` docker push luanpartes/nginx-com-vim:latest```
+
